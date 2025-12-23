@@ -1,0 +1,10 @@
+﻿<p>Attendance: @count</p>
+
+<button @onclick="Present">Present</button>
+<button @onclick="Absent">Absent</button>
+
+@code {
+    int count = 0;
+    void Present() => count++;
+    void Absent() => count--;
+}

@@ -1,0 +1,14 @@
+﻿<p>Count: @count</p>
+
+<button class="btn btn-success" @onclick="Increment">
+    Increase
+</button>
+
+@code {
+    int count = 0;
+
+    void Increment()
+    {
+        count++;
+    }
+}

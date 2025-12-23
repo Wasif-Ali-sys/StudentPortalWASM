@@ -1,0 +1,9 @@
+﻿<h4>@CourseName</h4>
+<p>Course Code: @CourseCode</p>
+<p>Credit Hours: @CreditHours</p>
+
+@code {
+    [Parameter] public string CourseName { get; set; }
+    [Parameter] public string CourseCode { get; set; }
+    [Parameter] public int CreditHours { get; set; }
+}

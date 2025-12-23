@@ -1,0 +1,13 @@
+﻿<button @onclick="Toggle">
+    Show / Hide Profile
+</button>
+
+@if (show)
+{
+    <p>This is student profile message</p>
+}
+
+@code {
+    bool show = false;
+    void Toggle() => show = !show;
+}
